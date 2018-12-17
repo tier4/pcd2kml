@@ -1,0 +1,5 @@
+
+      # -*- Entry points: -*-
+      [console_scripts]
+      pkgdep = pypipkg.scripts.command:main
+    
