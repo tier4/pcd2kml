@@ -10,10 +10,6 @@ from scipy.spatial import ConvexHull
 import numpy as np
 
 
-# file_path = "./bin_Laser000036_-00994.pcd"
-# output = "./sample.kml"
-# ref = 7
-
 def translate_xy_to_lnglat(x, y, EPSG_code):
     in_proj = Proj(init=EPSG_code)
     out_proj = Proj(init='EPSG:6668')
