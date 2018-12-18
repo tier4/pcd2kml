@@ -128,8 +128,7 @@ def concaveHull(dataset, k):
     p = Path(hull)
     pContained = p.contains_points(dataset, radius=0.0000000001)
     if (not pContained.all()):
-        print(("not all points of dataset contained in hull -- restarting with k = ",k+1))
+        # print(("not all points of dataset contained in hull -- restarting with k = ",k+1))
         return concaveHull(dataset, k+1)
 
-    print(("finished with k = ",k))
     return hull

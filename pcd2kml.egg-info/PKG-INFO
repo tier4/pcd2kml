@@ -2,11 +2,11 @@ Metadata-Version: 1.2
 Name: pcd2kml
 Version: 0.0.dev0
 Summary: Package Dependency: Validates package requirements
-Home-page: UNKNOWN
+Home-page: https://github.com/tier4/pcd2kml
 Author: kikkakesan
 Author-email: kikkakesan@gmail.com
 Maintainer: tier4
-Maintainer-email: tier4
+Maintainer-email: 
 License: MIT
 Description: UNKNOWN
 Platform: UNKNOWN

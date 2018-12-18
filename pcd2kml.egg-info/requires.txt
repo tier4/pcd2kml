@@ -1,4 +1,4 @@
-pcl
+python-pcl
 pyproj
 simplekml
 scipy
