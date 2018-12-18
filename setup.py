@@ -31,7 +31,7 @@ setup(
     author='kikkakesan',
     author_email='kikkakesan@gmail.com',
     maintainer='tier4',
-    maintainer_email='tier4',
+    maintainer_email='',
     description='Package Dependency: Validates package requirements',
     long_description=readme,
     packages=find_packages(),
