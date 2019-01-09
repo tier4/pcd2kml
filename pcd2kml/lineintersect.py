@@ -1,10 +1,4 @@
 #!/bin/env python
-
-##
-## determine if two line segments intersect
-## see: martin-thoma.com/how-to-check-if-two-line-segments-intersect/
-##
-
 import numpy as np
 
 def doBoundingBoxesIntersect(a, b, c, d):

@@ -1,13 +1,5 @@
 #!/bin/env python
 
-##
-## calculate the concave hull of a set of points
-## see: CONCAVE HULL: A K-NEAREST NEIGHBOURS APPROACH
-##      FOR THE COMPUTATION OF THE REGION OCCUPIED BY A
-##      SET OF POINTS
-##      Adriano Moreira and Maribel Yasmina Santos 2007
-##
-
 import numpy as np
 import scipy.spatial as spt
 import matplotlib.pyplot as plt
