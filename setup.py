@@ -35,7 +35,7 @@ setup(
     description='Package Dependency: Validates package requirements',
     long_description=readme,
     packages=find_packages(),
-    install_requires=_requires_from_file('requirements.txt'),
+    install_requires=_requires_from_file('requires.txt'),
     license="MIT",
     classifiers=[
         'Programming Language :: Python :: 2',
