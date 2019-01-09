@@ -22,7 +22,7 @@ version = next((line.split('=')[1].strip().replace("'", '')
                                               'pcd2kml',
                                               '__init__.py'))
                 if line.startswith('__version__ = ')),
-               '0.0.dev3')
+               '0.0.dev4')
 
 setup(
     name="pcd2kml",
@@ -35,7 +35,7 @@ setup(
     description='Package Dependency: Validates package requirements',
     long_description=readme,
     packages=find_packages(),
-    install_requires=["pyproj",  "simplekml", "scipy", "numpy"],
+    install_requires=["simplekml", "scipy", "numpy"],
     license="MIT",
     classifiers=[
         'Programming Language :: Python :: 2',
