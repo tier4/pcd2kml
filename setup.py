@@ -22,7 +22,7 @@ version = next((line.split('=')[1].strip().replace("'", '')
                                               'pcd2kml',
                                               '__init__.py'))
                 if line.startswith('__version__ = ')),
-               '0.0.dev4')
+               '1.0')
 
 setup(
     name="pcd2kml",
