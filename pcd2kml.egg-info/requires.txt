@@ -1,4 +1,3 @@
-pyproj
 simplekml
 scipy
 numpy
