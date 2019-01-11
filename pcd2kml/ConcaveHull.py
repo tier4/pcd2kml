@@ -108,7 +108,7 @@ def concaveHull(dataset, k):
                             hull[step-1-j-1],hull[step-j-1])
                     j=j+1
         if ( its==True ):
-            print(("all candidates intersect -- restarting with k = ",k+1))
+            # print(("all candidates intersect -- restarting with k = ",k+1))
             return concaveHull(dataset,k+1)
         prevPoint = currentPoint
         currentPoint = cPoints[i-1]
