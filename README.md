@@ -14,7 +14,7 @@ you also need to install [pyproj](https://github.com/jswhit/pyproj) and [pcl (Po
 
 ```
 import pcd2kml
-pcd2kml.create_kml_polygon("input.pcd", "output.kml", ref=3) #EPSG = ref code + 6668 in Japan
+pcd2kml.create_kml_polygon("input.pcd", "output.kml", ref=7) #EPSG = ref code + 6668 in Japan. For example, ref = 7 is Aichi, Gifu, Toyama and Ishikawa.
 ```
 
 You can see the output in Google earth.  
