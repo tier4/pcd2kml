@@ -8,7 +8,7 @@ Convert polygon written in point cloud file (.pcd) to kml file.
 
 `pip install pcd2kml`
 
-you also need to install [pyproj](https://github.com/jswhit/pyproj)
+you also need to install [pyproj](https://github.com/jswhit/pyproj) and [pcl (Point Cloud Library)](http://www.pointclouds.org/downloads/)
 
 ## Usage  
 
@@ -17,3 +17,4 @@ you also need to install [pyproj](https://github.com/jswhit/pyproj)
 import pcd2kml
 pcd2kml.create_kml_polygon("input.pcd", "output.kml", ref=3)
 ```
+
