@@ -15,14 +15,13 @@ def translate_xy_to_lnglat(x, y, EPSG_code):
     out_proj = Proj(init='EPSG:6668')
     return transform(in_proj, out_proj, x, y)
 
-def get_EPSG_code(ref_number):
-    if 1 <= int(ref_number) <= 19:
-        return "EPSG:" + str(6668 + int(ref_number))
-    else:
-        return None
+# def get_EPSG_code(ref_number):
+#     if 1 <= int(ref_number) <= 19:
+#         return "EPSG:" + str(6668 + int(ref_number))
+#     else:
+#         return None
 
-def create_kml_polygon(src_file, dst_file, ref):
-    EPSG_code = get_EPSG_code(ref)
+def create_kml_polygon(src_file, dst_file, EPSG_code):
     points = pcl.load(src_file)
     kml = simplekml.Kml()
     outerBoundaryList, pointsList = [], []
