@@ -29,7 +29,7 @@ def create_kml_polygon(src_file, dst_file, EPSG_code):
         pointsList.append(points[i])
     hull = ConvexHull(pointsList)
     for i in range(len(hull.vertices)):
-        lnglat = translate_xy_to_lnglat(x=points[hull.vertices[i]][0], y=points[hull.vertices[i]][1], EPSG_code=EPSG_code)
+        lnglat = translate_xy_to_lnglat(x=points[hull.vertices[i]][0], y=points[hull.vertices[i]][1], EPSG_code=str(EPSG_code))
         outerBoundaryList.append(lnglat)
     outerBoundaryList = np.array(outerBoundaryList)
     hull = ConcaveHull.concaveHull(outerBoundaryList, 3)
