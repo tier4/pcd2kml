@@ -38,3 +38,15 @@ def create_kml_polygon(src_file, dst_file, EPSG_code):
     hull = np.array(hull)
     kml.newpolygon(name="this_polygon", outerboundaryis=hull)
     kml.save(dst_file)
+
+def get_polygon(src_file, EPSG_code):
+    points = pcl.load(src_file)
+    kml = simplekml.Kml()
+    outerBoundaryList, pointsList = [], []
+    for i in range(points.size):
+        pointsList.append(points[i])
+    hull = ConvexHull(pointsList)
+    for i in range(len(hull.vertices)):
+        lnglat = translate_xy_to_lnglat(x=points[hull.vertices[i]][0], y=points[hull.vertices[i]][1], EPSG_code="EPSG:"+str(EPSG_code))
+        outerBoundaryList.append({"lng":lnglat[0], "lat":lnglat[1]})
+    return outerBoundaryList
